@@ -1,0 +1,111 @@
+/* body {
+    background-image: url("back.jpg");
+    background-repeat: repeat-y, repeat-x;
+    background-position: center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: auto;
+} */
+
+.index-content {
+    width: 100%;
+    min-width: 10%;
+    max-width: 100%;
+    min-height: 10%;
+    max-height: 100%;
+}
+.table{
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .table{
+    overflow-y: scroll;
+  }
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    background-color: orangered;
+    background-image: linear-gradient(to bottom, red, black);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#navbar {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+}
+#navbar li { display: inline;
+    text-align: center;
+}
+
+#navbar {
+  display: flex;
+  margin: fill;
+  padding: 0;
+  list-style-type: none;
+  border: 2px solid indianred;
+  border-radius: 20px 5px;
+  width: fit-content;
+  text-align: center;
+  background-color: indianred;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+#navbar a {
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+#navbar a:hover {
+  border-radius: 20px 5px;
+  background-color: darksalmon;
+}
+
+table {
+    border: black;
+    display: flex;
+    justify-content: space-evenly;
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    min-width: 10%;
+    max-width: 100%;
+    min-height: 10%;
+    max-height: 100%;
+}
+
+tr {
+    align-content: space-evenly;
+}
+
+td {
+    align-content: space-evenly;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+p {
+    font-family: Verdana;
+    font-size: large;
+}

@@ -1,84 +1,268 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
-    <title>Начальная страница</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <title>ФК Спартак Москва</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1 align="right" title="всплывающая подсказка">Форматирование текста</h1>
+<div id="index">
+    <div class="index-content">
+    <header>
+        <h1 align="center">Футбольный клуб Спартак-Москва</h1>
+        <center><ul id="navbar">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="https://tickets.spartak.com/" target="_blank">Билеты</a></li>
+            <li><a href="#">Клуб</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="contents.html">Стадион</a></li>
+            <li><a href="https://academy.spartak.com/" target="_blank">Академия</a></li>
+            <li><a href="#">О нас</a></li>
+        </ul></center>
+    </header>
 
-<p>опробование1</p>
+    <div class="table" style="max-width:100%; overflow:auto">
+        <h2 align="center"><br><br>Турнирная таблица</h2>
+        <table cellspacing="20px" border="2px" cellpadding="5px" style="width: 100%">
+            <tr style="background-color: #babbbc; font-weight: bold">
+                <td>№</td>
+                <td>Команда</td>
+                <td>Матчи</td>
+                <td>Выиграно</td>
+                <td>Проиграно</td>
+                <td>Ничья</td>
+                <td>Забито голов</td>
+                <td>Пропущено голов</td>
+                <td>Разница</td>
+                <td>Баллы</td>
+                <td>Следующий матч</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">1</td>
+                <td>Зенит</td>
+                <td>17</td>
+                <td>13</td>
+                <td>3</td>
+                <td>1</td>
+                <td>47</td>
+                <td>7</td>
+                <td>40</td>
+                <td>42</td>
+                <td>Пари НН</td>
+            </tr>
+            <tr style="background-color: antiquewhite">
+                <td class="number">2</td>
+                <td>Спартак</td>
+                <td>17</td>
+                <td>11</td>
+                <td>3</td>
+                <td>3</td>
+                <td>40</td>
+                <td>18</td>
+                <td>22</td>
+                <td>36</td>
+                <td>Урал</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">3</td>
+                <td>Ростов</td>
+                <td>17</td>
+                <td>10</td>
+                <td>5</td>
+                <td>2</td>
+                <td>32</td>
+                <td>23</td>
+                <td>9</td>
+                <td>35</td>
+                <td>Локомотив</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">4</td>
+                <td>Динамо</td>
+                <td>17</td>
+                <td>8</td>
+                <td>5</td>
+                <td>4</td>
+                <td>33</td>
+                <td>21</td>
+                <td>12</td>
+                <td>29</td>
+                <td>Крылья Советов</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">5</td>
+                <td>ЦСКА</td>
+                <td>17</td>
+                <td>8</td>
+                <td>5</td>
+                <td>4</td>
+                <td>30</td>
+                <td>18</td>
+                <td>12</td>
+                <td>29</td>
+                <td>Сочи</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">6</td>
+                <td>Ахмат</td>
+                <td>17</td>
+                <td>8</td>
+                <td>2</td>
+                <td>7</td>
+                <td>27</td>
+                <td>27</td>
+                <td>0</td>
+                <td>26</td>
+                <td>Оренбург</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">7</td>
+                <td>Оренбург</td>
+                <td>17</td>
+                <td>8</td>
+                <td>1</td>
+                <td>8</td>
+                <td>33</td>
+                <td>37</td>
+                <td>-4</td>
+                <td>25</td>
+                <td>Ахмат</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">8</td>
+                <td>Краснодар</td>
+                <td>17</td>
+                <td>7</td>
+                <td>4</td>
+                <td>6</td>
+                <td>31</td>
+                <td>29</td>
+                <td>2</td>
+                <td>25</td>
+                <td>Торпедо</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">9</td>
+                <td>Сочи</td>
+                <td>17</td>
+                <td>7</td>
+                <td>4</td>
+                <td>6</td>
+                <td>27</td>
+                <td>32</td>
+                <td>-5</td>
+                <td>25</td>
+                <td>ЦСКА</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">10</td>
+                <td>Урал</td>
+                <td>17</td>
+                <td>6</td>
+                <td>3</td>
+                <td>8</td>
+                <td>21</td>
+                <td>28</td>
+                <td>-7</td>
+                <td>21</td>
+                <td>Спартак</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">11</td>
+                <td>Крылья Советов</td>
+                <td>17</td>
+                <td>5</td>
+                <td>5</td>
+                <td>7</td>
+                <td>20</td>
+                <td>25</td>
+                <td>-5</td>
+                <td>20</td>
+                <td>Динамо</td>
+            </tr>
+            <tr style="background-color: white">
+                <td class="number">12</td>
+                <td>Пари НН</td>
+                <td>17</td>
+                <td>5</td>
+                <td>4</td>
+                <td>8</td>
+                <td>22</td>
+                <td>29</td>
+                <td>-7</td>
+                <td>19</td>
+                <td>Зенит</td>
+            </tr>
+            <tr style="background-color: lightyellow">
+                <td class="number">13</td>
+                <td>Факел</td>
+                <td>17</td>
+                <td>1</td>
+                <td>10</td>
+                <td>6</td>
+                <td>21</td>
+                <td>33</td>
+                <td>-12</td>
+                <td>13</td>
+                <td>Химки</td>
+            </tr>
+            <tr style="background-color: lightyellow">
+                <td class="number">14</td>
+                <td>Локомотив</td>
+                <td>17</td>
+                <td>3</td>
+                <td>4</td>
+                <td>10</td>
+                <td>20</td>
+                <td>34</td>
+                <td>-14</td>
+                <td>13</td>
+                <td>Ростов</td>
+            </tr>
+            <tr style="background-color: indianred">
+                <td class="number">15</td>
+                <td>Химки</td>
+                <td>17</td>
+                <td>3</td>
+                <td>3</td>
+                <td>11</td>
+                <td>16</td>
+                <td>36</td>
+                <td>-20</td>
+                <td>12</td>
+                <td>Факел</td>
+            </tr>
+            <tr style="background-color: indianred">
+                <td class="number">16</td>
+                <td>Торпедо</td>
+                <td>17</td>
+                <td>1</td>
+                <td>3</td>
+                <td>13</td>
+                <td>7</td>
+                <td>30</td>
+                <td>-23</td>
+                <td>6</td>
+                <td>Краснодар</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</div>
 
-<p>опробование2
-    <br>опробование3 </p>
-
-
-<p>Пример закомментированного фрагмента </p>
-
-
-<h3 align="center">Представление заголовка</h3>
-
-<p>
-    <font color="Blue" face="GothicG" size=6> size=6, font - не рекомендуется</font>
-</p>
-
-<p>
-    <font size="+1" title="шрифт"> size="+1", font - не рекомендуется</font>
-</p>
-
-<p> C<sub>2</sub>H<sub>5</sub>OH или 3<sup>2</sup>=9</p>
-
-<p><b><i><u> Опробование8 (bold, italic, underline) </u></i></b></p>
-
-<pre>
-    ________________________________________
-    |  10      12      13       14       55 |
-    |  изменений практически нет         5  |
-    ________________________________________
-    </pre>
-
-<blockquote>
-    вставляем цитату c продолжением на следующей строке c продолжением на следующей строке вставляем цитату c
-    продолжением на следующей строке c продолжением на следующей строке
-</blockquote>
-
-<hr color="Red" size="10" width=200>
-
-<p>
-<ul title="Не упорядочные  списки">
-    <li>первая строка списка
-    <li>вторая строка списка
-</ul>
-</p>
-
-
-<ol>
-    <li> 1-й элемент списка
-    <li> 2-й элемент списка
-    <li> 3-й элемент списка
-</ol>
-
-<pre>
-
-Задание 1.1. В ~/public_html/education/formatirovanie/index.html:
-
-Создать создать уникальную тематическую страницу  будущего сайта , содержащую:
-
-Основные структурные элементы head, tite, body и рассмотренныые выше элементы
-форматирования текста:заголовки, параграфы, шрифты (размер, цвет), индексы, степени, списки
-
-Вложенные ненумерованные списки.На первом уровне 3 элемента, на втором уровне - два элемента. 1-й уровень - диск, 2-й уровень - квадрат
-
-Вложенные нумерованные списки.На первом уровне два элемента, на втором -три.  1-й уровень - римские, 2-й -арабские - отсчет с 3
-
-Горизонтальную линию - в конце страницы, выравнивание-  по центру, высота 20 пикселей, 45% общей ширины
-
-Задание 1.2. В ~/public_html/education/formatirovanie/passwd.html:
-
-Создать страницу отображающую содержание вторую и третью страницы паспорта. Личные данные изменить, исполmзовать ранее изученные материалы
-
-</pre>
 </body>
 </html>
