@@ -1,33 +1,27 @@
-/* body {
-    background-image: url("back.jpg");
-    background-repeat: repeat-y, repeat-x;
-    background-position: center center;
-    background-attachment: scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: auto;
-} */
-
 .index-content {
     width: 100%;
     min-width: 10%;
     max-width: 100%;
     min-height: 10%;
     max-height: 100%;
+    position: fixed;
+    background-color: white;
 }
+
 .table{
-  text-align: center;
-  display: inline-block;
-  background-color: #fff;
-  padding: 2rem 2rem;
-  color: #000;
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    font-size: calc(2px + 1vw);
+    padding: 2rem 2rem;
+    color: #000;
 }
 
 @media screen and (max-width: 600px) {
-  .table{
-    overflow-y: scroll;
-  }
+    .table {
+        overflow-y: scroll;
+    }
+}
 
 h1 {
     font-size: 40px;
@@ -40,14 +34,14 @@ h1 {
 }
 
 #navbar {
-  margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
 }
+
 #navbar li { display: inline;
     text-align: center;
 }
@@ -75,6 +69,7 @@ h1 {
   display: inline-block;
   width: 100px;
 }
+
 #navbar a:hover {
   border-radius: 20px 5px;
   background-color: darksalmon;
@@ -107,5 +102,95 @@ td {
 
 p {
     font-family: Verdana;
-    font-size: large;
+    font-size: calc(2px + 1vw);
 }
+
+a {
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#footer {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+}
+
+#footer li { display: inline;
+    text-align: center;
+}
+
+#footer {
+  display: flex;
+  margin: fill;
+  padding: 0;
+  list-style-type: none;
+  border: 2px solid indianred;
+  border-radius: 20px 5px;
+  width: fit-content;
+  text-align: center;
+  background-color: indianred;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+#footer a {
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  width: 100px;
+}
+
+#footer a:hover {
+  border-radius: 20px 5px;
+  background-color: darksalmon;
+}
+
+#shop {
+    background-color: white;
+}
+
+.shopBody {
+    background-image: url("ny.png");
+    background-repeat: no-repeat;
+}
+
+.order {
+    background-color: lightcoral;
+    border-radius: 30px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+.up {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+    scroll-behavior: smooth;
+    background-color: darkred;
+    opacity: 80%;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+   }
